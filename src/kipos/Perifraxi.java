@@ -1,23 +1,21 @@
 package kipos;
 
-import java.util.Arraylist;
+import java.util.ArrayList;
 
 public class Perifraxi {
 	
-	private string name;
-	private string tupos;
+	private String name;
+	private String tupos;
 	
-	private Arraylist<Zwo> Zwa = new Arraylist<>();
+	private ArrayList<Zwa> Zwa = new ArrayList<>();
 	
-	public Perifraxi (string name, string tupos) {
+	public Perifraxi (String name, String tupos) {
 		this.name = name;
 		this.tupos = tupos;
-		
 	}
 	
-	public Zwo vresZwo(string name) throws ZwoNotFoundException {
-		
-		for(Zwo z : Zwa) {
+	public Zwa vresZwo(String name) throws ZwoNotFoundException {
+		for(Zwa z : Zwa) {
 			if (z.getName().equalsIgnoreCase(name)) {
 				return z;
 			}
@@ -26,19 +24,23 @@ public class Perifraxi {
 		throw new ZwoNotFoundException("zwo" + name + "den yparxei");
 	}
 	
-	public string getName() {
+	public String getName() {
 		return name;
-		
-		
 	}
 	
-	public string getTupos() {
+	public String getTupos() {
 		return tupos;
-		
 	}
-	
-	
 
+	public ArrayList<Zwa> getZwa() {
+		return Zwa;
+	}
 
+	public void setZwa(ArrayList<Zwa> zwa) {
+		Zwa = zwa;
+	}
+	public void setZwo(Zwa zwa) {
+		this.Zwa.add(zwa);
+	}
 }
 

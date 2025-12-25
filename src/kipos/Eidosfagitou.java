@@ -1,16 +1,14 @@
 package kipos;
 
-public class Eidosfagitou extends Zwa {
+public class Eidosfagitou {
 	
-	private string fagito();`	
-	
+	private String fagito;
 
-	public Eidosfagitou() {
+	public Eidosfagitou(String fagito) {
 		this.fagito = fagito;
-		
 	}
 	
-	public string getfagito() {
+	public String getfagito() {
 		return fagito;
 	}
 	

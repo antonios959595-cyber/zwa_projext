@@ -2,13 +2,12 @@ package kipos;
 
 public class thilastika extends Zwa {
 	
-	public thilastika(string name, string species, boolean canBeWashed) {
-		
-		super(name, species, isHungry, canBeWashed , Eidosfagitou);
+	public thilastika(String name, String species, String sound, boolean canBeWashed, boolean hungry, Eidosfagitou fagito) {
+		super(name, species, sound, hungry, canBeWashed , fagito);
 	}
 	
 public void makeSound() {
-	system.out.println(name + "i am lion grrr");
+	System.out.println(super.getName() + " i am a "+ super.getRatsa() + " " + super.getHxos());
 }
 
 }

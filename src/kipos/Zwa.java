@@ -1,62 +1,71 @@
 package kipos;
 
-import java.util.Arraylist;
+
+import java.util.ArrayList;
 
 public abstract class Zwa {
 	
-	private string species;
-	private string name;
+	private String species;
+	private String name;
 	private boolean canBeWashed;
 	private boolean isHungry;
-	private string Eidosfagitou fagito;
+	private String sound;
+//	private String Eidosfagitou fagito; //Ενας τυπος ανα πεδιο
+	private Eidosfagitou fagito;
 	
-	private Arraylist<Zwa> zwa = new Arraylist<Zwa>();
-	
- public Zwa(string text1, string text2, string text3 , string text4 , string text5) {
-	 species = text1;
-	 name = text2;
+ public Zwa(String name, String species, String sound, boolean text3 , boolean text4 , Eidosfagitou text5) {
+	 //Οι μεταβλητες σου να εχουν παντα νοημα δηλαδη οχι text1 αλλα species
+	 this.species = species;
+	 this.sound = sound;
+	 this.name = name;
 	 canBeWashed = text3;
 	 isHungry = text4; 
 	 fagito = text5;
- }	 
-	 
-public boolean canBeWashed() {
-	return canBeWashed;
+ }
+
+
+public void setCanBeWashed(boolean washed) {
+	this.canBeWashed = washed;
 }
-	
-public string toString() {
-	return ("name: " + name + "species: " + species + canBeWashed? "plenete" : "den plenete" );
+
+public String toString() {
+	return ("name: " + name + "species: " + species + (canBeWashed? "plenete" : "den plenete") );
 }
+
 public boolean isHungry() {
 	return isHungry;
 }
 public void feed() {
 	this.isHungry = false;
 }
-public string toString() {
-	return ("name: " + name + "species: " + species + canBeWashed? "plenete" : "den plenete" + isHungry? "peinaei" : "den peinaei" );
+public String toString2() {
+	 String plenete = canBeWashed? "plenete" : "den plenete";
+	return ("name: " + name + "species: " + species + plenete + (isHungry? "peinaei" : "den peinaei") );
 }
-public void setzwologikoskipos(zwologikoskipos Azwologikoskipos) {
-	myzwologikoskipos = Azwologikoskipos;
-}
+//public void setzwologikoskipos(zwologikoskipos Azwologikoskipos) {
+//	myzwologikoskipos = Azwologikoskipos;
+//}
 	
-public void printData() {
-	System.out.prinln("ratsa: " + ratsa);
-	System.out.pringln("name: " + name);
-	
- }
+//public void printData() {
+//	System.out.prinln("ratsa: " + ratsa);
+//	System.out.pringln("name: " + name);
+//
+// }
  
 
- public string getName() {
-	 retutn name;
+ public String getName() {
+	 return name;
  }
  
- public string getRatsa() {
-	 return ratsa;
+ public String getRatsa() {
+	 return species;
  }
  
- public string getHxos() {
-	 return hxos;
+ public String getHxos() {
+	 return sound;
  }
- 
+
+	public boolean isCanBeWashed() {
+		return canBeWashed;
+	}
 }
