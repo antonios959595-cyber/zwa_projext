@@ -20,6 +20,9 @@ public class main {
         perifraxi.setZwo(lion);
         perifraxi.setZwo(cat);
 
+        Perifraxi perifraxi2 = new Perifraxi("pingouinoi" , "giali");
+
+
         zwologikoskipos myzwologiskos = new zwologikoskipos();
         myzwologiskos.addPerifraxeis(perifraxi);
 
@@ -30,6 +33,23 @@ public class main {
         } catch (ZwoNotFoundException e) {
             System.out.println("sorry mallon aplito");
         }
+        Eidosfagitou fagitoPeng = new Eidosfagitou("fish");
+
+        amfivia peg = new amfivia("jhon" , "penguin" , "mprr" , true , false , fagitoPeng , 5);
+        perifraxi2.setZwo(peg);
+        System.out.println("is it hungry?" + peg.isHungry());
+        System.out.println(peg.getAuga());
+        System.out.println("trwi " + peg.getEidosFagitou().getfagito());
+
+        System.out.println("trwi " + cat.getEidosFagitou().getfagito());
+
+
+        Entoma muga =new Entoma("stelios", "iptamena", "bzzzz", false, true, eidosfagitou, true, 10);
+        muga.makeSound();
+
+        Entoma mirmigi =new Entoma("mitsos", "edafous", "krrr", false, true, eidosfagitou, false, 0);
+        mirmigi.makeSound();
+
 
 //     P1 = new amfivia("penguin", "jhon", false , true);
 

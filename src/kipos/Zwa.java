@@ -1,8 +1,6 @@
 package kipos;
 
 
-import java.util.ArrayList;
-
 public abstract class Zwa {
 	
 	private String species;
@@ -42,6 +40,10 @@ public String toString2() {
 	 String plenete = canBeWashed? "plenete" : "den plenete";
 	return ("name: " + name + "species: " + species + plenete + (isHungry? "peinaei" : "den peinaei") );
 }
+
+public Eidosfagitou getEidosFagitou() {
+	 return fagito;
+	}
 //public void setzwologikoskipos(zwologikoskipos Azwologikoskipos) {
 //	myzwologikoskipos = Azwologikoskipos;
 //}
@@ -61,11 +63,11 @@ public String toString2() {
 	 return species;
  }
  
- public String getHxos() {
+ public String getSound() {
 	 return sound;
  }
 
-	public boolean isCanBeWashed() {
+ public boolean isCanBeWashed() {
 		return canBeWashed;
 	}
 }

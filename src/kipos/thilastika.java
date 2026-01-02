@@ -6,8 +6,8 @@ public class thilastika extends Zwa {
 		super(name, species, sound, hungry, canBeWashed , fagito);
 	}
 	
-public void makeSound() {
-	System.out.println(super.getName() + " i am a "+ super.getRatsa() + " " + super.getHxos());
-}
+	public void makeSound() {
+		System.out.println(super.getName() + " i am a "+ super.getRatsa() + " " + super.getSound());
+	}
 
 }
