@@ -8,7 +8,6 @@ public abstract class Zwa {
 	private boolean canBeWashed;
 	private boolean isHungry;
 	private String sound;
-//	private String Eidosfagitou fagito; //Ενας τυπος ανα πεδιο
 	private Eidosfagitou fagito;
 	
  public Zwa(String name, String species, String sound, boolean text3 , boolean text4 , Eidosfagitou text5) {
